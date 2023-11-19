@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Independence Day 2023 - @Anubhav</title>
+    <title>ICC World Cup 2023 - @Anubhav</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img1.jpeg">
     <!-- <link rel="icon" href="https://i.ibb.co/6b55CLt/a-jpg-modified.png" /> -->
@@ -16,6 +16,11 @@
 <body>
 
 <div id="container">
+    <!-- <div id="image-container"> -->
+        <div id="image-container">
+            <img id="animated-image" src="img.jpg" alt="Animated Image">
+        </div>
+
     <div id="ball"></div>
     <div id="rope" onclick="toggleFlag()"></div>
     <div id="flagbody">
@@ -37,9 +42,9 @@
 
 <div id="acknowledgement">
     <center>
-        <h1 style="color: #F4C430;">Happy Independence Day 2023</h1>
-        <h1 style="color: azure;">माँ तुझे सलाम</h1>
-        <h1 style="color: rgb(6, 240, 96);">Let's Chant together 'Bharat Mata Ki Jai'</h1>
+        <h1 style="color: #ffc30e;">May India Win  </h1>
+        <h1 style="color: azure;">ICC Cricket World Cup</h1>
+        <h1 style="color: rgb(6, 240, 96);">Let's Chant together 'India India'</h1>
         <!-- <h1>Bharat Mata Ki Jai</h1> -->
         <!-- <h3>Let's Chant together 'Bharat Mata Ki Jai'</h3> -->
         <!-- <h1>सारे जहां से अच्छा हिंदुस्तान हमारा<br>Our India is great</h1> -->
@@ -55,7 +60,8 @@
 
 
 
-<audio id="music" src="https://www.dropbox.com/s/8li837azqylencp/aye%20meri%20zameen%20afsos%20nahi%20lagda%20tere%20liye%20son%20dj%20msr.mp3?raw=1" controls style="display: none;"></audio> 
+<!-- <audio id="music" src="https://www.dropbox.com/s/8li837azqylencp/aye%20meri%20zameen%20afsos%20nahi%20lagda%20tere%20liye%20son%20dj%20msr.mp3?raw=1" controls style="display: none;"></audio>  -->
+<audio id="music" src="https://res.cloudinary.com/dm1hkyabk/video/upload/v1700378550/lehra-do-ICC-worldCup-23_hwmzqm.mp3" controls style="display: none;"></audio> 
 
 <div id="controls">
     <div id="flagButtonContainer">
@@ -168,6 +174,63 @@
             transform: translateY(calc(100vh + 20px)) translateX(0);
         }
     }
+</style>
+
+<style>
+#image-container {
+    position: absolute;
+    /* padding-left: 0; */
+    padding-left: 18px;
+    padding-top: 13px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-55%, -50%);
+    animation: slideUpDown 4s ease-in-out infinite;
+    /* animation: slideLeftRight 4s ease-in-out infinite; */
+}
+
+#animated-image {
+    width: 200px; /* adjust the width as needed */
+    height: auto;
+   
+}
+
+@keyframes slideUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-40px);
+    }
+}
+
+@keyframes slideLeftRight {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-20px);
+    }
+}
+
+@keyframes slideUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-40px);
+    }
+}
+
+@media (max-width: 767px) {
+        #image-container {
+            left: 10px; /* Adjust as needed for your layout */
+            transform: none; /* Remove the previous translation */
+        }
+    }
+
+
+
 </style>
 
 </body>
